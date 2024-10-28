@@ -5,12 +5,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reddit Image Grid</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .grid {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .grid-item {
+            flex: 1 1 calc(33.333% - 10px);
+            margin: 5px;
+        }
+
+        .grid-item img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
 </head>
 
 <body>
     <div class="grid" id="imageGrid"></div>
-    <script src="script.js"></script>
+    <script src="app.js"></script>
 </body>
 
 </html>
